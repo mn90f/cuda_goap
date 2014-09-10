@@ -1,0 +1,49 @@
+﻿Build started 8/29/2014 1:44:04 PM.
+     1>Project "D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\NewestLolDebugger\NewestLolDebugger.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\NewestLolDebugger.unsuccessfulbuild".
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DNDEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I. /FIcuda_runtime.h /c "D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\NewestLolDebugger\kernel.cu" 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\B3057489\AppData\Local\Temp\tmpcfa65911f1fb40719b289b0d91ab41ac.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\kernel.cu.obj "D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\NewestLolDebugger\kernel.cu"
+         
+         D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\NewestLolDebugger>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\kernel.cu.obj "D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\NewestLolDebugger\kernel.cu" 
+     1>D:/skydrive/Visual Studio Files/Projects/NewestLolDebugger - LATEST/NewestLolDebugger/kernel.cu(436): warning : __shared__ memory variable with non-empty constructor or destructor (potential race between threads)
+         
+     1>D:/skydrive/Visual Studio Files/Projects/NewestLolDebugger - LATEST/NewestLolDebugger/kernel.cu(1139): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>D:/skydrive/Visual Studio Files/Projects/NewestLolDebugger - LATEST/NewestLolDebugger/kernel.cu(1139): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>D:/skydrive/Visual Studio Files/Projects/NewestLolDebugger - LATEST/NewestLolDebugger/kernel.cu(1169): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>D:/skydrive/Visual Studio Files/Projects/NewestLolDebugger - LATEST/NewestLolDebugger/kernel.cu(1169): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\Release\NewestLolDebugger.exe" /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\NewestLolDebugger.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\Release\NewestLolDebugger.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\Release\NewestLolDebugger.lib" /MACHINE:X86 Release\kernel.cu.obj
+         Release\GOAP_State.obj
+         Release\Octree.obj
+         Release\Vector3.obj
+         Release\Vector4.obj
+         Generating code
+         Finished generating code
+         NewestLolDebugger.vcxproj -> D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\Release\NewestLolDebugger.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\Release\NewestLolDebugger.exe;#1" /manifest Release\NewestLolDebugger.exe.intermediate.manifest
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\Release\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\Release\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\Release\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart32_55.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart64_55.dll
+                 2 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "Release\NewestLolDebugger.unsuccessfulbuild".
+         Touching "Release\NewestLolDebugger.lastbuildstate".
+     1>Done Building Project "D:\skydrive\Visual Studio Files\Projects\NewestLolDebugger - LATEST\NewestLolDebugger\NewestLolDebugger.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.00
